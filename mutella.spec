@@ -1,29 +1,26 @@
-Summary:	mutella is a command line/web gnutella servent
+Summary:	Commandline Gnutella servent
 Name:		mutella
 Version:	0.4.3
 Release:	1
 License:	GPL v2
 Group:		Applications/Networking
-Source0:	http://dl.sf.net/%{name}/%{name}-%{version}.tar.gz
-URL:		http://mutella.sf.net/
+Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+URL:		http://mutella.sourceforge.net/
 BuildRequires:	readline-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Mutella is a terminal-mode Gnutella client with an intuitive and easy to
-use interface.
-Mutella supports all the functionality required to participate as a
-full-featured node
-in the Gnutella network, that is supports file search, download and
-sharing.
+use interface.  Mutella supports all the functionality required to
+participate as a full-featured node in the Gnutella network, that is
+supports file search, download and sharing.
 
-Mutella is optimized for a high-bandwidth connection, it sets standards
-for the server
-performance and stability. However, Mutella is also happy to run on a
-modest-speed line.
+Mutella is optimized for a high-bandwidth connection, it sets standards for
+the server performance and stability. However, Mutella is also happy to run
+on a modest-speed line.
 
 %package frontend-www
-Summary:	mutella's standard WWW frontend
+Summary:	Mutella's standard WWW frontend
 Group:		Applications/Networking
 Requires:	mutella
 
