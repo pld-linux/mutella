@@ -10,6 +10,7 @@ Source1:	%{name}.desktop
 Source2:	%{name}.png
 URL:		http://mutella.sourceforge.net/
 BuildRequires:	readline-devel
+BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
