@@ -6,6 +6,7 @@ Release:	2
 License:	GPL v2
 Group:		Applications/Networking
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+# Source0-md5:	3fc7b649967dc722cd93532c2d043db1
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 URL:		http://mutella.sourceforge.net/
