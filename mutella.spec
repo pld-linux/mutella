@@ -1,4 +1,5 @@
 Summary:	Commandline Gnutella servent
+Summary(pl):	Tekstowy klient sieci Gnutella
 Name:		mutella
 Version:	0.4.3
 Release:	1
@@ -10,22 +11,36 @@ BuildRequires:	readline-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Mutella is a terminal-mode Gnutella client with an intuitive and easy to
-use interface.  Mutella supports all the functionality required to
+Mutella is a terminal-mode Gnutella client with an intuitive and easy
+to use interface. Mutella supports all the functionality required to
 participate as a full-featured node in the Gnutella network, that is
 supports file search, download and sharing.
 
-Mutella is optimized for a high-bandwidth connection, it sets standards for
-the server performance and stability. However, Mutella is also happy to run
-on a modest-speed line.
+Mutella is optimized for a high-bandwidth connection, it sets
+standards for the server performance and stability. However, Mutella
+is also happy to run on a modest-speed line.
+
+%description -l pl
+Mutella jest tekstowym klientem Gnutelli z intuicyjnym i ³atwym w
+u¿yciu interfejsem. Mutella spe³nia wszystkie wymagania by byæ
+pe³noprawnym wêz³em Gnutelli - obs³uguje wyszukiwanie, udostêpnianie
+oraz ¶ci±ganie plików.
+
+Mutella jest zoptymalizowana dla szerokopasmowych po³±czeñ, ustanawia
+standard w szybko¶ci i stabilno¶ci dzia³ania, jednak¿e zadowala siê
+tak¿e s³abymi ³±czami.
 
 %package frontend-www
 Summary:	Mutella's standard WWW frontend
+Summary(pl):	Standardowy interfejs WWW Mutelli
 Group:		Applications/Networking
 Requires:	mutella
 
 %description frontend-www
-This package contains the WWW frontend for mutella.
+This package contains the WWW frontend for Mutella.
+
+%description frontend-www -l pl
+Ten pakiet zawiera interfejs WWW dla Mutelli.
 
 %prep
 %setup -q
