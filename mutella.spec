@@ -9,6 +9,7 @@ Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 # Source0-md5:	3fc7b649967dc722cd93532c2d043db1
 Source1:	%{name}.desktop
 Source2:	%{name}.png
+Patch0:		%{name}-gcc33.patch
 URL:		http://mutella.sourceforge.net/
 BuildRequires:	readline-devel
 BuildRequires:	zlib-devel
@@ -48,6 +49,7 @@ Ten pakiet zawiera interfejs WWW dla Mutelli.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %configure
