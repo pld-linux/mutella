@@ -2,10 +2,12 @@ Summary:	Commandline Gnutella servent
 Summary(pl):	Tekstowy klient sieci Gnutella
 Name:		mutella
 Version:	0.4.3
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Applications/Networking
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+Source1:	%{name}.desktop
+Source2:	%{name}.png
 URL:		http://mutella.sourceforge.net/
 BuildRequires:	readline-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -51,8 +53,14 @@ Ten pakiet zawiera interfejs WWW dla Mutelli.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
+install -d  $RPM_BUILD_ROOT{%{_datadir}/applications,%{_pixmapsdir}}
+
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+install %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications/
+install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -61,6 +69,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/mutella.1*
+%{_datadir}/applications/*.desktop
+%{_pixmapsdir}/*.png
 
 %files frontend-www
 %defattr(644,root,root,755)
