@@ -8,5 +8,5 @@ Icon=mutella.png
 Exec=mutella
 Terminal=1
 Type=Application
-Categories=Network;
+Categories=Application;Network;
 # vi: encoding=utf-8
