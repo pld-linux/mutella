@@ -1,12 +1,12 @@
 Summary:	Commandline Gnutella servent
 Summary(pl):	Tekstowy klient sieci Gnutella
 Name:		mutella
-Version:	0.4.3
-Release:	3
+Version:	0.4.5
+Release:	1
 License:	GPL v2
 Group:		Applications/Networking
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
-# Source0-md5:	3fc7b649967dc722cd93532c2d043db1
+# Source0-md5:	1a676eacf562e3b8de90493f99fe059c
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 Patch0:		%{name}-gcc33.patch
