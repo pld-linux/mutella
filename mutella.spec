@@ -14,6 +14,7 @@ URL:		http://mutella.sourceforge.net/
 BuildRequires:	automake
 BuildRequires:	readline-devel
 BuildRequires:	zlib-devel
+BuildRequires:  libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
