@@ -12,9 +12,9 @@ Source2:	%{name}.png
 Patch0:		%{name}-gcc33.patch
 URL:		http://mutella.sourceforge.net/
 BuildRequires:	automake
+BuildRequires:	libstdc++-devel
 BuildRequires:	readline-devel
 BuildRequires:	zlib-devel
-BuildRequires:  libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -41,7 +41,7 @@ tak¿e s³abymi ³±czami.
 Summary:	Mutella's standard WWW frontend
 Summary(pl):	Standardowy interfejs WWW Mutelli
 Group:		Applications/Networking
-Requires:	mutella
+Requires:	%{name} = %{version}-%{release}
 
 %description frontend-www
 This package contains the WWW frontend for Mutella.
