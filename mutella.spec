@@ -55,13 +55,13 @@ Ten pakiet zawiera interfejs WWW dla Mutelli.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -d  $RPM_BUILD_ROOT{%{_datadir}/applications,%{_pixmapsdir}}
+install -d  $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/applications/
-install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}/
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
+install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -70,7 +70,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/mutella.1*
-%{_datadir}/applications/*.desktop
+%{_desktopdir}/*.desktop
 %{_pixmapsdir}/*.png
 
 %files frontend-www
