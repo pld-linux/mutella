@@ -5,7 +5,7 @@ Version:	0.4.5
 Release:	2
 License:	GPL v2
 Group:		Applications/Networking
-Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/mutella/%{name}-%{version}.tar.gz
 # Source0-md5:	1a676eacf562e3b8de90493f99fe059c
 Source1:	%{name}.desktop
 Source2:	%{name}.png
