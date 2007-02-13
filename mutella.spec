@@ -1,5 +1,5 @@
 Summary:	Commandline Gnutella servent
-Summary(pl.UTF-8):   Tekstowy klient sieci Gnutella
+Summary(pl.UTF-8):	Tekstowy klient sieci Gnutella
 Name:		mutella
 Version:	0.4.5
 Release:	2
@@ -39,7 +39,7 @@ także słabymi łączami.
 
 %package frontend-www
 Summary:	Mutella's standard WWW frontend
-Summary(pl.UTF-8):   Standardowy interfejs WWW Mutelli
+Summary(pl.UTF-8):	Standardowy interfejs WWW Mutelli
 Group:		Applications/Networking
 Requires:	%{name} = %{version}-%{release}
 
