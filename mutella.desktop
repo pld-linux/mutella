@@ -1,10 +1,9 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=Mutella
 Name[pl]=Mutella
 Comment=Commandline Gnutella servent
 Comment[pl]=Tekstowy klient sieci Gnutella
-Icon=mutella.png
+Icon=mutella
 Exec=mutella
 Terminal=true
 Type=Application
